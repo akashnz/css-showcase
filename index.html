@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="A collection of everything I have learned about CSS in the last three weeks.">
+  <meta name="keywords" content="CSS,Media queries,responsive design,responsive website">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
+  <title>CSS Showcase</title>
+</head>
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="container">
+        <h1 class="logo"><a href="index.html">CSS Showcase</a></h1>
+        <ul>
+          <li><a class="current" href="index.html">Home</a></li>
+          <li><a href="references.html">References</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="showcase">
+      <div class="container">
+        <div class="showcase-content">
+          <h1>Feedback</h1>
+          <a class="btn" href="contact.html">Send Feedback</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section id="home-info" class="bg-orange">
+    <div class="info-img"></div>
+    <div class="info-content">
+      <h2>What this page shows</h2>
+      <p>
+        A nav bar whose contents always stay within the screen's middle 1100 pixels. <br>
+        Visual elements arranged using floats that re-arrange themselves on handhelds. <br>
+        Links with styles applied to them. <hr>
+        Click the button below for a list of resources I used to learn about CSS.
+      </p>
+      <a href="references.html" class="btn btn-light">Resources Consulted</a>
+    </div>
+  </section>
+
+  <section>
+    <div class="box bg-light">
+      <img src="/img/Media_queries.png" alt="Media query logo" height="55" width="55">
+      <h3>Media Queries</h3>
+      <p>When the screen width drops below 768px, mobile.css is used.</p>
+    </div>
+
+    <div class="box bg-primary">
+        <img src="/img/CSS_animations.png" alt="CSS animation logo" height="55" width="auto">
+        <h3>Effects & Transitions</h3>
+        <p>Have not done this yet & will not have time to finish this section in time.</p>
+     </div>
+
+    <div class="box bg-light">
+        <img src="/img/Flexbox_grid.png" alt="CSS Grid logo" height="55" width="55">
+        <h3>Flexbox & Grid</h3>
+        <p>I did not have time to finish this section. So I have deleted most references to it.</p>
+    </div>
+  </section>
+
+  <!-- So the floating divs do not fall apart -->
+  <div class="clr"></div>
+
+  <footer id="main-footer">
+    <p>
+      This site has not been optimised for the iPhone 5/SE's small 320x568 resolution screen. <br>
+      I used Google Chrome's dev tools for testing and it looks OK on the other eight handheld devices.
+    </p>
+  </footer>
+</body>
+</html>
